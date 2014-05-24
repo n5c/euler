@@ -34,6 +34,9 @@ int sum_amicables(int num)
 			continue;
 		sum += (a[i] + a[a[i]]);
 	}
+
+	free(a);
+
 	return sum;
 }
 
