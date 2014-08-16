@@ -32,7 +32,7 @@ int cal_cycle_length(int d)
 	return len;
 }
 
-int find_longest_reciprocal_cycles_numerator(int range)
+int find_longest_reciprocal_cycles_denominator(int range)
 {
 	int i, len, max, d;
 
@@ -50,7 +50,7 @@ int find_longest_reciprocal_cycles_numerator(int range)
 
 int main(int argc, char *argv[])
 {
-	printf("%d\n", find_longest_reciprocal_cycles_numerator(1000));
+	printf("%d\n", find_longest_reciprocal_cycles_denominator(1000));
 	return 0;
 }
 
