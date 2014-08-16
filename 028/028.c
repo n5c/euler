@@ -7,10 +7,11 @@ int sum_spiral_diagonals(int side)
 	sum = 1;
 	k = 1;
 	for (i = 3; i <= side; i += 2) {
-		for (j = 0; j < 4; j++) {
-			k += (i - 1);
-			sum += k;
-		}
+		sum += k + (i - 1);
+		sum += k + ((i - 1) * 2);
+		sum += k + ((i - 1) * 3);
+		sum += k + ((i - 1) * 4);
+		k += ((i - 1) * 4);
 	}
 
 	return sum;
