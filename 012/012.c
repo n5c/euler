@@ -22,8 +22,7 @@ int find_triangle_number(int limit)
 		i++;
 		tnum += i;
 		cnt = 2; /* 1 + i */
-		chk = tnum;
-		j = 2;
+		chk = (int)(sqrt((double)tnum) + 1);
 		for (j = 2; j < chk; j++) {
 			if ((tnum % j) != 0)
 				continue;
